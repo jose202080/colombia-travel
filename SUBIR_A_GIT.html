@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colombia Travel | Discover Colombia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🇨🇴 Colombia<span>Travel</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">WELCOME TO COLOMBIA</p>
+
+            <h1>
+                Discover the magic of
+                <span>Colombia</span>
+            </h1>
+
+            <p>
+                Explore breathtaking landscapes, unique cultures,
+                incredible adventures and unforgettable experiences.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn primary">
+                    Explore Destinations
+                </a>
+
+                <a href="#packages" class="btn secondary">
+                    View Packages
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="section">
+
+        <div class="section-title">
+            <p>EXPLORE COLOMBIA</p>
+            <h2>Popular Destinations</h2>
+            <span>
+                Discover some of the most amazing places in Colombia.
+            </span>
+        </div>
+
+
+        <div class="destinations-grid">
+
+            <!-- AMAZONAS -->
+            <article class="destination-card">
+
+                <div class="card-image amazonas">
+                    <div class="card-label">
+                        Amazonas
+                    </div>
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Amazonas</h3>
+
+                    <p>
+                        Explore the Colombian Amazon and discover
+                        incredible biodiversity and indigenous cultures.
+                    </p>
+
+                    <a href="#" onclick="showDestination('Amazonas')">
+                        Discover →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- MAVECURE -->
+            <article class="destination-card">
+
+                <div class="card-image mavecure">
+                    <div class="card-label">
+                        Mavecure
+                    </div>
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Cerros de Mavecure</h3>
+
+                    <p>
+                        Experience one of Colombia's most impressive
+                        natural landscapes in Guainía.
+                    </p>
+
+                    <a href="#" onclick="showDestination('Mavecure')">
+                        Discover →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NUQUI -->
+            <article class="destination-card">
+
+                <div class="card-image nuqui">
+                    <div class="card-label">
+                        Nuquí
+                    </div>
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Nuquí, Chocó</h3>
+
+                    <p>
+                        Enjoy beaches, rainforest, Pacific culture
+                        and unforgettable natural experiences.
+                    </p>
+
+                    <a href="#" onclick="showDestination('Nuquí')">
+                        Discover →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- TAYRONA -->
+            <article class="destination-card">
+
+                <div class="card-image tayrona">
+                    <div class="card-label">
+                        Tayrona
+                    </div>
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Tayrona & Santa Marta</h3>
+
+                    <p>
+                        Discover Caribbean beaches, mountains,
+                        nature and Colombian culture.
+                    </p>
+
+                    <a href="#" onclick="showDestination('Tayrona')">
+                        Discover →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCES -->
+    <section id="experiences" class="experiences">
+
+        <div class="section-title">
+
+            <p>LIVE THE EXPERIENCE</p>
+
+            <h2>What do you want to experience?</h2>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+            <div class="experience">
+                <div class="experience-icon">🌿</div>
+                <h3>Nature</h3>
+                <p>
+                    Explore jungles, mountains, beaches and incredible
+                    Colombian landscapes.
+                </p>
+            </div>
+
+
+            <div class="experience">
+                <div class="experience-icon">🏔️</div>
+                <h3>Adventure</h3>
+                <p>
+                    Discover hiking, trekking and exciting adventures.
+                </p>
+            </div>
+
+
+            <div class="experience">
+                <div class="experience-icon">🎭</div>
+                <h3>Culture</h3>
+                <p>
+                    Meet local communities and discover Colombian traditions.
+                </p>
+            </div>
+
+
+            <div class="experience">
+                <div class="experience-icon">🍲</div>
+                <h3>Gastronomy</h3>
+                <p>
+                    Taste traditional Colombian food and discover
+                    new flavors.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PACKAGES -->
+    <section id="packages" class="section">
+
+        <div class="section-title">
+
+            <p>PLAN YOUR ADVENTURE</p>
+
+            <h2>Travel Packages</h2>
+
+            <span>
+                Choose the experience that fits your adventure.
+            </span>
+
+        </div>
+
+
+        <div class="packages-grid">
+
+            <div class="package">
+
+                <h3>Amazon Adventure</h3>
+
+                <p class="days">
+                    5 Days / 4 Nights
+                </p>
+
+                <ul>
+                    <li>✔ Accommodation</li>
+                    <li>✔ Local guide</li>
+                    <li>✔ Daily activities</li>
+                    <li>✔ Transportation</li>
+                </ul>
+
+                <div class="price">
+                    From $899 USD
+                </div>
+
+                <button onclick="bookPackage('Amazon Adventure')">
+                    Book Now
+                </button>
+
+            </div>
+
+
+            <div class="package featured">
+
+                <div class="popular">
+                    MOST POPULAR
+                </div>
+
+                <h3>Caribbean Escape</h3>
+
+                <p class="days">
+                    7 Days / 6 Nights
+                </p>
+
+                <ul>
+                    <li>✔ Accommodation</li>
+                    <li>✔ Tayrona Park</li>
+                    <li>✔ Local guide</li>
+                    <li>✔ Transportation</li>
+                </ul>
+
+                <div class="price">
+                    From $1,199 USD
+                </div>
+
+                <button onclick="bookPackage('Caribbean Escape')">
+                    Book Now
+                </button>
+
+            </div>
+
+
+            <div class="package">
+
+                <h3>Pacific Experience</h3>
+
+                <p class="days">
+                    6 Days / 5 Nights
+                </p>
+
+                <ul>
+                    <li>✔ Accommodation</li>
+                    <li>✔ Beach activities</li>
+                    <li>✔ Local guide</li>
+                    <li>✔ Transportation</li>
+                </ul>
+
+                <div class="price">
+                    From $999 USD
+                </div>
+
+                <button onclick="bookPackage('Pacific Experience')">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <p>TRAVELER STORIES</p>
+
+            <h2>What Our Travelers Say</h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    "Colombia was one of the best trips of my life.
+                    The landscapes were incredible!"
+                </p>
+
+                <h4>Sarah Johnson</h4>
+
+                <span>United States 🇺🇸</span>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    "The experience in the Amazon was unforgettable.
+                    Everything was perfectly organized."
+                </p>
+
+                <h4>Michael Davis</h4>
+
+                <span>United States 🇺🇸</span>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    "Beautiful country, amazing people and incredible
+                    food. I definitely want to come back!"
+                </p>
+
+                <h4>Emily Wilson</h4>
+
+                <span>Canada 🇨🇦</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <p>LET'S PLAN YOUR TRIP</p>
+
+                <h2>
+                    Ready to discover Colombia?
+                </h2>
+
+                <span>
+                    Tell us what kind of experience you are looking for
+                    and our travel team will help you plan your adventure.
+                </span>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email"
+                    required
+                >
+
+                <select id="destination">
+
+                    <option value="">
+                        Select a destination
+                    </option>
+
+                    <option>Amazonas</option>
+                    <option>Mavecure</option>
+                    <option>Nuquí</option>
+                    <option>Tayrona</option>
+
+                </select>
+
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us about your dream trip..."
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Request
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>🇨🇴 ColombiaTravel</h3>
+
+                <p>
+                    Discover Colombia. Live unforgettable experiences.
+                </p>
+            </div>
+
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="#destinations">Destinations</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#packages">Packages</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <p>📧 hello@colombiatravel.com</p>
+                <p>📱 +57 300 000 0000</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 ColombiaTravel. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
